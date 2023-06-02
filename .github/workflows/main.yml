@@ -19,5 +19,5 @@ jobs:
           key: ${{ secrets.KEY }}
           port: 22
           script: |
-            cd ~/git_action_test
-            pwd
+            cd ~/script
+            ./git_action_test_pull.sh
