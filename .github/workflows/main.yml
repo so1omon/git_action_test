@@ -10,10 +10,9 @@ on:
 jobs:
   build: # job 이름 : build
     runs-on: ubuntu-latest # runner 운영체제
-    name: Build
     steps:
       - name: SSH Remote Commands
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v0.1.9
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
